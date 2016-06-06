@@ -1,4 +1,8 @@
-import {render} from "react-dom";
+import ReactDOM from "react-dom";
 import PixiPanel from "./components/PixiPanel";
 
-render(<PixiPanel />, document.getElementById('devpanel'));
+const devPanelId = '#devpanel';
+
+const panelContainer = document.querySelector(devPanelId);
+
+ReactDOM.render(<PixiPanel />, panelContainer);
